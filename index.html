@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Login</title>
+</head>
+<body>   
+    <main id="container">
+        <!-- A NOMECLATURA FORM É USADA PARA CRIAR O FORMÚLARIO -->
+        <form id="login_form"> 
+            <!-- FORM HEADER -->
+            <div id="form_header">
+                <h1>Login</h1>
+               <!-- IMAGEM DA LUA PARA ALTERNAR ENTRE O LIGHT MODE E DARK, E O "I" INDICA SER ICONE--> 
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
+
+            <!-- SOCIAL MEDIA LINKS -->
+            <div id="social_media">
+                <!-- COLOCANDO A IMAGEM DO FACEBOOK -->
+                <a href="#">
+                    <img src="imgs/facebook.jpg" alt="facebook">
+                </a>
+
+                <!-- COLOCANDO A IMAGEM DO GOOGLE -->
+                <a href="#">
+                    <img src="imgs/google.jpg" alt="Google logo">
+                </a>
+                
+                <!-- COLOCANDO A IMAGEM DO GITHUB -->
+                <a href="#">
+                    <img src="imgs/github.jpg" alt="github">
+                </a>
+            </div>
+
+            <!--  ADICIONANDO OS INPUTS -->
+            <div id="inputs">
+                <!--  COLOCAÇÃO DO NAME (NOME) -->
+                <div class="input-box"> <!-- CADA DIV VAI VAI TER UM INPUT, MAS PARA MEXER ENTRE TODOS AO MESMO TEMPO CLASSIFICA COM UMA CLASS DE MESMO NOME-->
+                    <label for="name">
+                        Name
+                        <div class="input-field">
+                            <!-- iMAGEM DO USUARIO -->
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- COLOCAÇÃO DO EMAIL -->
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <!-- IMAGEM DO ENVELOPE, COMO SE FOSSE O EMAIL-->
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- COLOCAÇÃO DO PASSWORD (SENHA) -->
+                <div class="input-box">
+                    <label for="password">
+                        Password
+                        <div class="input-field">
+                            <!-- IMAGEM DO CHAVE, QUE INDICA A SENHA-->
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+                    
+                    <!-- COLOCAÇÃO DO FORGOT PASSWORD ( ESQUEÇEU A SENHA) -->
+                    <div id="forgot_password">
+                        <a href="#">
+                            Forgot your password?
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLOCANDO O  LOGIN BUTTON (BOTÃO DE LOGIN) -->
+            <button type="submit" id="login_button">
+                Login
+            </button>
+        </form>
+    </main>
+
+    <!-- INTRODUZINDO JAVASCRIPT PARA A ANIMAÇÃO DA PÁGINA  -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
